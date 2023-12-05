@@ -3,7 +3,7 @@ import {
     createWebHistory,
     createWebHashHistory,
 } from "vue-router";
-
+import APP from '@/App.vue'
 const staticRoute = [
     {
         path: "/",
@@ -12,7 +12,7 @@ const staticRoute = [
     {
         path: "/yfpl",
         name: "yfpl",
-        component: () => import("@/App.vue"),
+        component: APP,
     },
 ]
 const router = createRouter({
