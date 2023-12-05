@@ -126,10 +126,10 @@ onBeforeUnmount(() => {
       span {
         position: absolute;
         color: #3a3a3a;
-        text-wrap: nowrap;
         top: 50%;
         left: 50px;
         transform: translate(0, -50%);
+        white-space: nowrap;
       }
     }
     .back {
