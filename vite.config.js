@@ -15,7 +15,7 @@ export default defineConfig({
   base: "/yfpl",
   build: {
     target: "modules", //设置最终构建的浏览器兼容目标  //es2015(编译成es5) | modules
-    outDir: "dist/yfpl", // 构建得包名  默认：dist
+    outDir: "dist", // 构建得包名  默认：dist
     assetsDir: "static", // 静态资源得存放路径文件名 static
     sourcemap: false, //构建后是否生成 source map 文件
     minify: "esbuild", // 项目压缩 :boolean | 'terser' | 'esbuild'
@@ -23,9 +23,9 @@ export default defineConfig({
     cssTarget: "chrome61", //防止 vite 将 rgba() 颜色转化为 #RGBA 十六进制符号的形式  (要兼容的场景是安卓微信中的 webview 时,它不支持 CSS 中的 #RGBA 十六进制颜色符号)
     rollupOptions: {
       output: {
-        chunkFileNames: 'static/js/[name]-[hash].js',
-        entryFileNames: 'static/js/[name]-[hash].js',
-        assetFileNames: 'static/[ext]/[name]-[hash].[ext]',
+        chunkFileNames: 'yfpl/static/js/[name]-[hash].js',
+        entryFileNames: 'yfpl/static/js/[name]-[hash].js',
+        assetFileNames: 'yfpl/static/[ext]/[name]-[hash].[ext]',
         manualChunks(id) {
           if (id.includes("node_modules")) {
             return id
