@@ -15,9 +15,10 @@ export default defineConfig(({ mode }) => {
     resolve: {
       alias,
     },
+    base: "/yfpl",
     build: {
       target: "modules", //设置最终构建的浏览器兼容目标  //es2015(编译成es5) | modules
-      outDir: 'dist', // 构建得包名  默认：dist
+      outDir: `dist/${env.VITE_APP_BASE_API}`, // 构建得包名  默认：dist
       assetsDir: "static", // 静态资源得存放路径文件名 static
       sourcemap: false, //构建后是否生成 source map 文件
       minify: "esbuild", // 项目压缩 :boolean | 'terser' | 'esbuild'
