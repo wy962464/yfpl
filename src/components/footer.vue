@@ -85,22 +85,22 @@ const handlerClickIconList = (item) => {
       </ul>
       <ul class="detailsUl">
         <li class="detailsLi">
-          主办单位:深圳市生态环境局通讯地址:深圳市福田区红荔西路8007号土地房产交易大厦
+          主办单位：深圳市生态环境局&nbsp;&nbsp;通讯地址：深圳市福田区红荔西路8007号土地房产交易大厦
         </li>
-        <li class="detailsLi">热线(投诉)电话:0755-12369、0755-12345</li>
+        <li class="detailsLi">热线（投诉）电话：0755-12369、0755-12345</li>
         <li class="detailsLi">
-          制作维护单位:
-          深圳市生态环境智能管控中心版权所有@粤ICP备10096639号网站标识码4403000050
+          制作维护单位：
+          深圳市生态环境智能管控中心&nbsp;&nbsp;版权所有@粤ICP备10096639号&nbsp;&nbsp;网站标识码4403000050
         </li>
-        <li class="detailsLi">电子邮箱;jls@meeb.sz.gov.cn</li>
+        <li class="detailsLi">电子邮箱：jls@meeb.sz.gov.cn</li>
         <li class="detailsLi">
-          生态环境执法投诉举报电话:
+          生态环境执法投诉举报电话：
           0755-83590648(工作日:9:00-12:00，14:00-18:00)
         </li>
         <li class="detailsLi">
-          网站标识码4403000050@ &nbsp;
+          网站标识码4403000050&nbsp;
           <span style="cursor: pointer" @click="handlerClickPolic"
-            ><i class="iconBg"></i> 粤公网安备44030402002944号</span
+            ><i class="iconBg"></i> 粤公网安备&nbsp;44030402002944号</span
           >
         </li>
       </ul>
@@ -181,7 +181,7 @@ const handlerClickIconList = (item) => {
       height: 34px;
       display: flex;
       justify-content: flex-end;
-      margin-right: 475px;
+      margin-right: 505px;
       img {
         cursor: pointer;
       }

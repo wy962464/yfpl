@@ -22,13 +22,17 @@ const handlerBackClick = () => {
   window.open(href, "_self");
 };
 const handlerNavMenu = (item) => {
-  window.open(item.clickUrl, "_self");
+  if (item.name == "信息填报") {
+    window.open(item.clickUrl, "_blank");
+  } else {
+    window.open(item.clickUrl, "_self");
+  }
 };
 const navMenuList = [
   {
     name: "首页",
     imgUrl: "nav_icon1.png",
-    clickUrl: "https://www-app.gdeei.cn/gdeepub/front/dal/dal/newindex",
+    clickUrl: "",
   },
   {
     name: "信息填报",
@@ -114,8 +118,8 @@ onBeforeUnmount(() => {
     justify-content: space-between;
     align-items: center;
     .icon {
-      height: 58px;
-      width: 58px;
+      height: 40px;
+      width: 40px;
       background: url("@/assets/images/icon.png") no-repeat;
       background-size: 100% 100%;
       position: relative;
@@ -124,7 +128,7 @@ onBeforeUnmount(() => {
         color: #3a3a3a;
         text-wrap: nowrap;
         top: 50%;
-        left: 70px;
+        left: 50px;
         transform: translate(0, -50%);
       }
     }
@@ -167,6 +171,7 @@ onBeforeUnmount(() => {
         color: #94dbd2;
         font-family: Helvetica Neue, Helvetica, PingFang SC, Tahoma, Arial,
           sans-serif;
+        overflow: hidden;
         .navMenuLi {
           box-sizing: border-box;
           min-width: 130px;
