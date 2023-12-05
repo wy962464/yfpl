@@ -15,7 +15,7 @@ export default defineConfig(({ mode }) => {
     resolve: {
       alias,
     },
-    base: env.VITE_APP_BASE_API,
+    base: "/",
     build: {
       target: "modules", //设置最终构建的浏览器兼容目标  //es2015(编译成es5) | modules
       outDir: `dist/${env.VITE_APP_BASE_API}`, // 构建得包名  默认：dist
