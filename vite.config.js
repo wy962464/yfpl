@@ -12,7 +12,7 @@ export default defineConfig({
   resolve: {
     alias,
   },
-  base: "/",
+  base: "/yfpl",
   build: {
     target: "modules", //设置最终构建的浏览器兼容目标  //es2015(编译成es5) | modules
     outDir: "dist", // 构建得包名  默认：dist
